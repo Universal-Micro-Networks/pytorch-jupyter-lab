@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      target: local
+    tty: true
+    ports:
+      - 8888:8888
+    command: jupyter-lab --no-browser --ip 0.0.0.0 --allow-root --NotebookApp.token=''
