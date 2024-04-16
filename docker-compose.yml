@@ -7,4 +7,9 @@ services:
     tty: true
     ports:
       - 8888:8888
-    command: jupyter-lab --no-browser --ip 0.0.0.0 --allow-root --NotebookApp.token=''
+    command: jupyter-lab --no-browser --ip 0.0.0.0 --allow-root
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
