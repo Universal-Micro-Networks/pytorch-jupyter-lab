@@ -6,7 +6,7 @@ authors = ["Tadashi Takahashi <ttakahashi@umn.co.jp>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10.12"
 jupyterlab = "^4.1.6"
 jupyterlab-code-formatter = "^2.2.1"
 lckr-jupyterlab-variableinspector = "^3.2.1"
