@@ -2,7 +2,7 @@ FROM nvidia/cuda:12.1.1-cudnn8-devel-ubuntu22.04 as base
 
 ARG GROUP
 
-RUN apt update && apt install -y curl gcc software-properties-common make pkg-config
+RUN apt update && apt install -y curl gcc software-properties-common make pkg-config graphviz
 RUN add-apt-repository ppa:deadsnakes/ppa
 #RUN apt update && apt install -y python3.12
 
